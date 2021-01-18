@@ -57,6 +57,14 @@ app.get('/404.html', (req, res) => {
     res.sendFile(path.join(__dirname + '/404.html'));
 })
 
+app.get('/charts.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/charts.html'));
+})
+
+app.get('/tables.html', (req, res) => {
+    res.sendFile(path.join(__dirname + '/tables.html'));
+})
+
 app.use(express.static('public'));
 
 app.listen(port, () => {
